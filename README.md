@@ -11,7 +11,7 @@
 * npm
 * Prettier - Code formatter
 * Service Portal Snippets
-* TDOD Highlights
+* TODO Highlights
 * vscode-icons
 
 # User Settings
