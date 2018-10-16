@@ -1,18 +1,17 @@
 ## Extensions
-* Auto Close Tag
-* Auto Rename Tag
-* Beautify
-* Bracket Pair Colorizer
-* Color Highlight
-* ESLint
-* Git History
-* GitLens
-* HTML Snippets
-* npm
-* Prettier - Code formatter
-* Service Portal Snippets
-* TODO Highlights
-* vscode-icons
+* [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+* [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+* [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=wgenial.html-snippets)
+* [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Service Portal Snippets](https://marketplace.visualstudio.com/items?itemName=stevengregory.service-portal-snippets)
+* [TODO Highlights](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 
 # User Settings
 ```json
