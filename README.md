@@ -22,11 +22,12 @@
     "workbench.iconTheme": "vscode-icons",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
     "editor.minimap.enabled": false,
-    "vsicons.dontShowNewVersionMessage": true
+    "vsicons.dontShowNewVersionMessage": true,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5"
 }
 ```
