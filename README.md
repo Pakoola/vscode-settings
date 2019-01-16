@@ -31,3 +31,104 @@
     "prettier.trailingComma": "es5"
 }
 ```
+
+# Javascript Code Snippets (ServiceNow focused)
+```json
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"GlideRecord": {
+		"prefix": "grwhile",
+		"body": [
+			"var gr = new GlideRecord('$1');",
+			"gr.addQuery('$2', '$3');",
+			"gr.query();",
+			"while(gr.next()){",
+			"\t$0",
+			"}"
+		],
+		"description": "Glide Record WhileQuery using a single param"
+	},
+	"GlideRecordGet": {
+		"prefix": "grget",
+		"body": [
+			"var gr = new GlideRecord('$1');",
+			"if(gr.get('$2')){",
+			"\t$0",
+			"\tgr.setWorkflow(false);",
+			"\tgr.autoSysFields(false);",
+			"\tgr.update();",
+			"}"
+		],
+		"description": "Glide Record Query using .get() method to retrieve one record by sys_id"
+	},
+
+	"GlideRecordEncodedQuery": {
+		"prefix": "grenc",
+		"body": [
+			"var qstring = '$1';",
+			"var gr = new GlideRecord('$2');",
+			"gr.addEncodedQuery(qstring);",
+			"gr.query();",
+			"while(gr.next()){",
+			"\t$0",
+			"}"
+		],
+		"description": "Glide Record Query using .addEncodedQuery() method"
+	},
+
+	"GlideRecordGetParams": {
+		"prefix": "grget2",
+		"body": [
+			"var gr = new GlideRecord('$1');",
+			"if(gr.get('$2', '$3')){",
+			"\t$0",
+			"}"
+		],
+		"description": "Glide Record Query using .get() method to retrieve one record by one param"
+	},
+
+	"GlideSysChoice": {
+		"prefix": "syschoice",
+		"body": [
+			"// Param1: table, Param2: field",
+			"var choiceList = new GlideSysChoice('$1', '$2');",
+			"var gr = choiceList.getChoices();",
+			"while (gr.next()) {",
+  			"\tgs.print(gr.value + ' \t ' + gr.label);",
+			"}"
+		],
+		"description": "Glide Record Query using .get() method to retrieve one record by one param"
+	},
+
+	"iife": {
+		"prefix": "iife",
+		"body": [
+			"(function(){",
+			"\t$0",
+			"})();"
+		],
+		"description": "Immediately Invoked Function Expression",
+	},
+
+	"setValue": {
+		"prefix": "setValue",
+		"body": [
+			"gr.setValue('$1', $2);"
+		],
+		"description": "object method to setValue",
+	}
+}
+
+```
